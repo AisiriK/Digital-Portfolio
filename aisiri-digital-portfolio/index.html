@@ -1,0 +1,133 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#eef1ff">
+  <meta name="description" content="Aisiri Kiran's student portfolio: business studies, projects, internships, sport and volunteering.">
+  <title>Aisiri Kiran | Digital Portfolio</title>
+  <style>
+    :root{--ink:#292a49;--soft:#51546e;--muted:#737790;--blue:#d7eaff;--pink:#f8deec;--purple:#e4ddff;--paper:#f8f9ff;--glass:rgba(255,255,255,.62);--line:rgba(255,255,255,.86);--shadow:0 22px 65px rgba(72,77,128,.12);--max:1100px}
+    *{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:90px}
+    body{margin:0;color:var(--ink);line-height:1.65;font-family:Aptos,"Segoe UI",system-ui,sans-serif;background:radial-gradient(ellipse at 8% 8%,rgba(198,225,255,.76),transparent 29rem),radial-gradient(ellipse at 90% 14%,rgba(248,218,236,.66),transparent 30rem),radial-gradient(ellipse at 73% 59%,rgba(224,216,255,.5),transparent 30rem),var(--paper);overflow-x:hidden}
+    a{color:inherit}a:focus-visible,button:focus-visible{outline:3px solid #746cad;outline-offset:4px}.wrap{width:min(var(--max),calc(100% - 40px));margin-inline:auto}
+    .glass{background:var(--glass);border:1px solid var(--line);box-shadow:var(--shadow),inset 0 1px 0 rgba(255,255,255,.84);backdrop-filter:blur(18px);-webkit-backdrop-filter:blur(18px)}
+    .header{position:sticky;z-index:10;top:10px;padding-top:10px}.nav{min-height:66px;display:flex;align-items:center;justify-content:space-between;padding:9px 14px 9px 19px;border-radius:22px}
+    .brand{display:flex;align-items:center;gap:11px;font-weight:760;text-decoration:none;letter-spacing:-.03em}.brand-mark{width:38px;height:38px;display:grid;place-items:center;border-radius:14px;color:white;background:linear-gradient(145deg,#928bd8,#80b2e8 57%,#dfa8cb);box-shadow:0 8px 20px rgba(112,122,190,.24);font-size:.84rem}
+    .nav-links{display:flex;align-items:center;gap:4px}.nav-links a{padding:9px 13px;border-radius:999px;text-decoration:none;color:var(--soft);font-weight:650;font-size:.91rem;transition:.2s ease}.nav-links a:hover{background:rgba(255,255,255,.65);transform:translateY(-1px)}.nav-links .contact-link{background:#595b89;color:white;padding-inline:17px}
+    .menu{display:none;border:0;background:transparent;color:var(--ink);font:inherit;font-size:1.4rem;cursor:pointer}main{padding-bottom:35px}
+    .hero{min-height:650px;padding:72px 0 60px;display:grid;grid-template-columns:1.08fr .92fr;align-items:center;gap:32px}
+    .eyebrow,.kicker{margin:0 0 10px;color:#7775a2;text-transform:uppercase;letter-spacing:.13em;font-size:.76rem;font-weight:800}.eyebrow{display:flex;align-items:center;gap:10px;margin-bottom:19px}.eyebrow:before{content:"";width:9px;height:9px;border-radius:50%;background:#8b85c8;box-shadow:0 0 0 5px rgba(139,133,200,.13)}
+    h1,h2,h3,p{margin-top:0}h1{margin-bottom:17px;font-size:clamp(3.2rem,6.2vw,5.7rem);line-height:.98;letter-spacing:-.075em;font-weight:780}h1 span{color:#6d689f}
+    .lead{max-width:560px;margin:0 0 14px;color:var(--soft);font-size:clamp(1.1rem,2vw,1.36rem);line-height:1.5}.hero-copy{max-width:560px;margin-bottom:26px;color:var(--muted)}
+    .actions{display:flex;flex-wrap:wrap;gap:11px}.button{min-height:48px;padding:0 19px;display:inline-flex;align-items:center;justify-content:center;gap:9px;border-radius:999px;text-decoration:none;font-size:.93rem;font-weight:720;transition:transform .2s ease,box-shadow .2s ease}.button:hover{transform:translateY(-2px);box-shadow:0 12px 25px rgba(72,77,130,.17)}.primary{background:#595b89;color:white}.secondary{border:1px solid rgba(105,110,158,.16);background:rgba(255,255,255,.58)}
+    .hero-note{display:flex;align-items:center;gap:9px;margin:22px 0 0;color:#787d98;font-size:.84rem}.hero-note b{color:#8781b9;font-size:1rem}
+    .art{position:relative;min-height:450px;display:grid;place-items:center;perspective:1000px}.glow{position:absolute;width:min(390px,94%);aspect-ratio:1;border-radius:50%;background:radial-gradient(circle,rgba(255,255,255,.94) 0 20%,rgba(199,224,255,.62) 40%,rgba(224,215,255,.36) 63%,transparent 74%)}
+    .orbit{position:absolute;width:380px;max-width:94%;aspect-ratio:1;border:1px solid rgba(121,126,181,.24);border-radius:50%;transform:rotateX(67deg) rotateZ(-23deg);box-shadow:0 0 35px rgba(149,157,221,.14)}.orbit.two{width:290px;transform:rotateX(68deg) rotateZ(35deg);border-color:rgba(206,145,184,.28)}
+    .dot{position:absolute;top:13%;right:9%;width:17px;height:17px;border-radius:50%;background:linear-gradient(145deg,#fff,#96bae9);box-shadow:0 0 0 8px rgba(255,255,255,.3),0 10px 22px rgba(93,119,187,.25)}.dot.small{top:auto;right:auto;bottom:17%;left:7%;width:12px;height:12px;background:linear-gradient(145deg,#fff,#e8aacd)}
+    .profile-card{position:relative;z-index:2;width:min(350px,84%);padding:25px;border-radius:31px;transform:rotateY(-7deg) rotateX(3deg);transition:transform .4s ease}.art:hover .profile-card{transform:rotateY(0) rotateX(0) translateY(-5px)}
+    .card-top{display:flex;align-items:center;justify-content:space-between;color:#777b98;font-size:.72rem;font-weight:800;letter-spacing:.1em;text-transform:uppercase}.sparkle{width:34px;height:34px;display:grid;place-items:center;border-radius:12px;background:rgba(255,255,255,.63);color:#8d82bd;font-size:1.2rem}
+    .sphere{width:124px;height:124px;margin:25px auto 18px;display:grid;place-items:center;border-radius:46% 54% 49% 51%/52% 44% 56% 48%;background:radial-gradient(circle at 30% 22%,#fff 0 6%,#e8e6ff 20%,#c9e4ff 47%,#e7c9e4 74%,#c4c6f1 100%);box-shadow:inset -10px -14px 27px rgba(118,116,183,.15),inset 8px 8px 20px rgba(255,255,255,.92),0 20px 42px rgba(130,132,190,.2);animation:float 7s ease-in-out infinite}
+    .sphere:after{content:"AK";width:66px;height:66px;display:grid;place-items:center;border-radius:23px;border:1px solid rgba(255,255,255,.75);background:rgba(255,255,255,.5);color:#63618f;box-shadow:0 8px 21px rgba(92,102,164,.13);font-weight:820;font-size:1.35rem;letter-spacing:-.06em;transform:rotate(-8deg)}
+    .profile-card h2{margin:0;text-align:center;font-size:1.4rem;letter-spacing:-.04em}.profile-card p{margin:5px 0 18px;text-align:center;color:var(--muted);font-size:.87rem}.chips{display:flex;justify-content:center;flex-wrap:wrap;gap:7px}.chips span{padding:6px 10px;border:1px solid rgba(255,255,255,.82);border-radius:999px;background:rgba(255,255,255,.48);color:#686c91;font-size:.72rem;font-weight:700}
+    .floating{position:absolute;z-index:3;right:0;bottom:19px;display:flex;align-items:center;gap:10px;padding:12px 15px;border-radius:17px;transform:rotate(3deg)}.floating .icon{width:32px;height:32px;display:grid;place-items:center;border-radius:11px;color:#625f95;background:linear-gradient(145deg,rgba(201,227,255,.9),rgba(222,212,255,.8))}.floating strong,.floating small{display:block}.floating strong{font-size:.8rem}.floating small{color:var(--muted);font-size:.71rem}
+    section{padding:58px 0}.section-head{display:flex;align-items:end;justify-content:space-between;gap:25px;margin-bottom:25px}.section-head .kicker{margin-bottom:7px}.section-title{margin:0;font-size:clamp(2rem,4vw,3.1rem);line-height:1.07;letter-spacing:-.065em}.section-intro{max-width:390px;margin:0;color:var(--muted);font-size:.95rem}
+    .about{display:grid;grid-template-columns:.85fr 1.15fr;gap:32px;align-items:center;padding:clamp(24px,4.5vw,46px);border-radius:30px}.about-art{position:relative;min-height:245px;display:grid;place-items:center;overflow:hidden;border-radius:24px;background:linear-gradient(145deg,rgba(201,227,255,.68),rgba(247,214,232,.55) 53%,rgba(222,212,255,.72))}
+    .about-art:before{content:"";position:absolute;width:205px;aspect-ratio:1;border:1px solid rgba(255,255,255,.75);border-radius:50%;transform:rotateX(67deg) rotateZ(20deg);box-shadow:0 0 0 28px rgba(255,255,255,.16),0 0 0 55px rgba(255,255,255,.1)}.about-art:after{content:"AK";position:relative;z-index:1;width:136px;aspect-ratio:1;display:grid;place-items:center;border-radius:45% 55% 52% 48%;background:radial-gradient(circle at 30% 24%,#fff,#dce8ff 47%,#e9cae6 84%);box-shadow:inset -8px -12px 24px rgba(119,118,174,.14),0 20px 40px rgba(90,107,161,.16);color:#615f91;font-size:2rem;font-weight:800;letter-spacing:-.08em;transform:rotate(-8deg)}
+    .about-art span{position:absolute;bottom:15px;z-index:2;padding:6px 11px;border-radius:999px;background:rgba(255,255,255,.63);color:#686c8b;font-size:.75rem;font-weight:700}.about-copy p{margin-bottom:13px;color:var(--soft)}.about-copy p:last-child{margin-bottom:0;color:#716d9f;font-weight:700}
+    .experience-grid,.project-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px}.experience-card{position:relative;min-height:210px;padding:22px;border-radius:22px;overflow:hidden;transition:transform .25s ease,box-shadow .25s ease}.experience-card:hover,.project-card:hover{transform:translateY(-4px);box-shadow:0 27px 62px rgba(73,77,130,.17),inset 0 1px 0 rgba(255,255,255,.9)}
+    .experience-card:after{content:"";position:absolute;right:-55px;bottom:-62px;width:120px;height:120px;border-radius:50%;background:rgba(255,255,255,.28)}.blue{background:linear-gradient(145deg,rgba(226,241,255,.82),rgba(255,255,255,.55))}.pink{background:linear-gradient(145deg,rgba(255,233,242,.82),rgba(255,255,255,.55))}.purple{background:linear-gradient(145deg,rgba(237,232,255,.87),rgba(255,255,255,.55))}.mixed{background:linear-gradient(145deg,rgba(226,241,255,.74),rgba(251,229,240,.66),rgba(255,255,255,.55))}
+    .card-meta,.project-top{display:flex;align-items:center;justify-content:space-between;gap:14px;margin-bottom:17px}.label{display:inline-flex;align-items:center;gap:8px;color:#777b9e;font-size:.7rem;font-weight:800;letter-spacing:.09em;text-transform:uppercase}.label:before{content:"";width:7px;height:7px;border-radius:50%;background:#a39bd3}.index{color:rgba(82,85,133,.42);font-size:.84rem;font-weight:800}
+    .experience-card h3,.project-card h3{margin:0 0 4px;font-size:1.2rem;letter-spacing:-.035em}.role{margin:0 0 11px;color:#6c7090;font-size:.89rem;font-weight:650}.experience-card>p:last-child{position:relative;z-index:1;margin:0;color:var(--soft);font-size:.9rem}
+    .sports{display:flex;align-items:center;gap:15px;margin-top:15px;padding:17px 21px;border-radius:20px}.sports-icon{width:41px;height:41px;flex:0 0 41px;display:grid;place-items:center;border-radius:14px;background:rgba(255,255,255,.68);color:#7b75ac;font-size:1.15rem}.sports p{margin:0;color:var(--soft);font-size:.91rem}.sports strong{color:var(--ink)}
+    .project-card{min-height:365px;padding:25px;border-radius:26px;transition:transform .25s ease,box-shadow .25s ease}.project-card.ai{background:linear-gradient(145deg,rgba(218,237,255,.88),rgba(250,244,255,.67) 67%,rgba(255,255,255,.58))}.project-card.data{background:linear-gradient(145deg,rgba(250,226,240,.8),rgba(235,230,255,.76) 67%,rgba(255,255,255,.58))}
+    .project-type{padding:6px 10px;border:1px solid rgba(255,255,255,.78);border-radius:999px;background:rgba(255,255,255,.49);color:#686c91;font-size:.69rem;font-weight:750}.project-card h3{margin-bottom:10px;font-size:1.55rem;letter-spacing:-.05em}.project-summary{margin-bottom:16px;color:var(--soft);font-size:.93rem}
+    .details{display:grid;gap:9px;padding-top:15px;border-top:1px solid rgba(89,95,144,.13)}.detail{display:grid;grid-template-columns:89px 1fr;gap:10px;font-size:.82rem}.detail b{color:#686c91}.detail span{color:var(--soft)}.tool-row{display:flex;flex-wrap:wrap;gap:7px;margin-top:15px}.tool-row span{padding:5px 9px;border-radius:9px;background:rgba(255,255,255,.55);color:#666b8a;font-size:.7rem;font-weight:700}
+    .skills-layout{display:grid;grid-template-columns:.78fr 1.22fr;gap:28px;align-items:start}.skill-note{padding:24px;border-radius:23px;background:linear-gradient(145deg,rgba(221,235,255,.77),rgba(248,224,239,.59))}.quote{display:block;color:#8d85be;font:3rem/.8 Georgia,serif}.skill-note p{margin:10px 0 0;color:var(--soft);font-size:1.03rem}
+    .skill-list{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:9px}.skill{display:flex;align-items:center;gap:11px;padding:13px 15px;border-radius:16px}.skill-num{width:29px;height:29px;flex:0 0 29px;display:grid;place-items:center;border-radius:10px;background:rgba(255,255,255,.68);color:#7773a7;font-size:.69rem;font-weight:800}.skill span:last-child{color:var(--soft);font-size:.85rem;font-weight:700}
+    .contact-panel{position:relative;display:grid;grid-template-columns:1fr auto;gap:22px;align-items:center;padding:clamp(26px,5vw,46px);border-radius:30px;overflow:hidden;background:linear-gradient(115deg,rgba(222,238,255,.82),rgba(251,225,241,.78) 53%,rgba(232,225,255,.85))}
+    .contact-panel:after{content:"";position:absolute;top:-210px;right:12%;width:280px;height:280px;border:1px solid rgba(255,255,255,.72);border-radius:50%;box-shadow:0 0 0 28px rgba(255,255,255,.1),0 0 0 56px rgba(255,255,255,.07)}
+    .contact-panel h2{position:relative;z-index:1;margin:0 0 8px;font-size:clamp(2rem,4vw,3rem);line-height:1.05;letter-spacing:-.06em}.contact-panel p{position:relative;z-index:1;max-width:560px;margin:0;color:var(--soft)}
+    .contact-links{position:relative;z-index:1;display:flex;flex-wrap:wrap;gap:14px;margin-top:15px}.contact-links a{color:#5e6289;font-size:.84rem;font-weight:700;text-decoration-color:rgba(94,98,137,.3);text-underline-offset:4px}.contact-action{position:relative;z-index:2}
+    footer{display:flex;justify-content:space-between;gap:18px;padding:23px 0 34px;color:#777b96;font-size:.8rem}footer a{font-weight:700;text-decoration:none}.sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}
+    @keyframes float{0%,100%{transform:translateY(0) rotate(-5deg)}50%{transform:translateY(-9px) rotate(1deg)}}
+    @media(max-width:850px){.hero{grid-template-columns:1fr .82fr;gap:16px;min-height:600px}.art{min-height:395px}.section-head{align-items:start;flex-direction:column;gap:11px}.section-intro{max-width:580px}.about{grid-template-columns:.75fr 1.25fr;gap:22px}}
+    @media(max-width:650px){.wrap{width:min(var(--max),calc(100% - 28px))}.header{top:6px;padding-top:6px}.nav{min-height:59px;padding:8px 11px 8px 14px}.menu{display:block;position:relative;z-index:2;width:41px;height:41px;border-radius:14px;background:rgba(255,255,255,.53)}.nav-links{position:absolute;top:calc(100% + 7px);left:0;right:0;display:none;flex-direction:column;align-items:stretch;padding:9px;border:1px solid var(--line);border-radius:20px;background:rgba(250,250,255,.92);box-shadow:var(--shadow);backdrop-filter:blur(18px)}.nav-links.open{display:flex}.nav-links a{padding:11px 13px}.nav-links .contact-link{text-align:center}.hero{grid-template-columns:1fr;gap:5px;min-height:auto;padding:65px 0 35px}h1{font-size:clamp(3.2rem,15vw,5rem)}.art{min-height:380px;margin-top:4px}section{padding:43px 0}.about{grid-template-columns:1fr;gap:22px;padding:16px}.about-art{min-height:220px}.experience-grid,.project-grid{grid-template-columns:1fr}.experience-card{min-height:0}.project-card{min-height:340px;padding:22px}.skills-layout{grid-template-columns:1fr;gap:14px}.contact-panel{grid-template-columns:1fr}.contact-action{margin-top:2px}footer{flex-direction:column;gap:7px}}
+    @media(max-width:390px){.skill-list{grid-template-columns:1fr}.detail{grid-template-columns:78px 1fr}}
+    @media(prefers-reduced-motion:reduce){*,*:before,*:after{scroll-behavior:auto!important;animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important}}
+  </style>
+</head>
+<body>
+  <a class="sr-only" href="#main">Skip to content</a>
+  <header class="header wrap">
+    <nav class="nav glass" aria-label="Main navigation">
+      <a class="brand" href="#top" aria-label="Aisiri Kiran, home"><span class="brand-mark" aria-hidden="true">AK</span><span>Aisiri Kiran</span></a>
+      <button class="menu" type="button" aria-label="Open navigation" aria-expanded="false" aria-controls="nav-links">☰</button>
+      <div class="nav-links" id="nav-links"><a href="#about">About</a><a href="#experience">Experience</a><a href="#projects">Projects</a><a href="#skills">Skills</a><a class="contact-link" href="#contact">Get in touch ↗</a></div>
+    </nav>
+  </header>
+  <main id="main" class="wrap">
+    <section class="hero" id="top" aria-labelledby="hero-title">
+      <div>
+        <p class="eyebrow">BBA (Honours) student · Bengaluru</p>
+        <h1 id="hero-title">Hi, I’m <span>Aisiri.</span></h1>
+        <p class="lead">Curious about business, and ready to learn by doing.</p>
+        <p class="hero-copy">I’m an open, outgoing student who enjoys meeting people, taking initiative and making the most of new opportunities. I’m exploring where I can contribute in the business world.</p>
+        <div class="actions"><a class="button primary" href="#projects">Explore my work ↘</a><a class="button secondary" href="mailto:aisiri.k2006@gmail.com">Say hello ↗</a></div>
+        <p class="hero-note"><b aria-hidden="true">✧</b> People, operations and ideas that make a difference</p>
+      </div>
+      <div class="art" role="img" aria-label="Abstract pastel glass artwork with Aisiri's initials">
+        <div class="glow" aria-hidden="true"></div><div class="orbit" aria-hidden="true"><i class="dot"></i></div><div class="orbit two" aria-hidden="true"><i class="dot small"></i></div>
+        <div class="profile-card glass"><div class="card-top"><span>A little about me</span><span class="sparkle" aria-hidden="true">✧</span></div><div class="sphere" aria-hidden="true"></div><h2>Aisiri Kiran</h2><p>Student · explorer · teammate</p><div class="chips"><span>People</span><span>Operations</span><span>Events</span></div></div>
+        <div class="floating glass"><span class="icon" aria-hidden="true">✦</span><span><strong>Always learning</strong><small>One experience at a time</small></span></div>
+      </div>
+    </section>
+    <section id="about" aria-labelledby="about-title">
+      <div class="section-head"><div><p class="kicker">A quick introduction</p><h2 class="section-title" id="about-title">A bit about me</h2></div><p class="section-intro">I’m building a foundation in business through study, hands-on projects, internships and community involvement.</p></div>
+      <div class="about glass"><div class="about-art" aria-hidden="true"><span>Learning by getting involved</span></div><div class="about-copy">
+        <p>I’m pursuing a <strong>Bachelor of Business Administration (Honours)</strong> at the T. A. Pai Management Institute (TAPMI), Bengaluru, part of Manipal Academy of Higher Education.</p>
+        <p>I’m still exploring which area of business I’d like to focus on. My internships have introduced me to people and workplace practices, logistics operations, and sports event management. Group projects have also let me connect technology with culture and work with data for sales reporting.</p>
+        <p>I’m outgoing, open to new experiences and willing to take initiative. I learn best by joining in, asking questions and working with others.</p>
+        <p>Right now, I’m curious about the many ways people, processes and ideas come together in business.</p>
+      </div></div>
+    </section>
+    <section id="experience" aria-labelledby="experience-title">
+      <div class="section-head"><div><p class="kicker">Learning outside the classroom</p><h2 class="section-title" id="experience-title">Experience & involvement</h2></div><p class="section-intro">Each opportunity has helped me understand how teams work and how I can contribute.</p></div>
+      <div class="experience-grid">
+        <article class="experience-card blue glass"><div class="card-meta"><span class="label">Internship · Human resources</span><span class="index">01</span></div><h3>Isha Foundation</h3><p class="role">HR Department · 11th grade</p><p>I interned with the HR department and gained an introduction to workplace practices and the role of human resources in an organisation.</p></article>
+        <article class="experience-card pink glass"><div class="card-meta"><span class="label">Internship · Logistics</span><span class="index">02</span></div><h3>Blue Dart</h3><p class="role">Operations · 12th grade</p><p>I learned about logistics operations and how parcels move through the delivery process, gaining a closer look at how a large service operation works.</p></article>
+        <article class="experience-card purple glass"><div class="card-meta"><span class="label">Internship · Sports management</span><span class="index">03</span></div><h3>Hoops Genesis</h3><p class="role">Sports event organisation</p><p>I helped organise an event and learned about budgeting, promoting it and contacting potential contributors who could support it.</p></article>
+        <article class="experience-card mixed glass"><div class="card-meta"><span class="label">Volunteering · Environment</span><span class="index">04</span></div><h3>Isha Foundation</h3><p class="role">Save Soil, Conscious Planet</p><p>As a student at Isha Home School, I took part in volunteering activities for the Save Soil, Conscious Planet campaign, including tree-planting efforts.</p></article>
+      </div>
+      <div class="sports glass"><span class="sports-icon" aria-hidden="true">◉</span><p><strong>Sport has always been part of my school life.</strong> I participated in a range of sports and earned medals and awards along the way.</p></div>
+    </section>
+    <section id="projects" aria-labelledby="projects-title">
+      <div class="section-head"><div><p class="kicker">Selected student work</p><h2 class="section-title" id="projects-title">Projects I’ve worked on</h2></div><p class="section-intro">A look at how I contribute to group work, connect ideas and prepare information for reporting.</p></div>
+      <div class="project-grid">
+        <article class="project-card ai glass"><div class="project-top"><span class="project-type">Diversity, Inclusivity & Rootedness</span><span class="index">01</span></div><h3>AI and food systems</h3><p class="project-summary">A group project exploring how technology and artificial intelligence relate to food and the systems around it.</p>
+          <div class="details"><div class="detail"><b>Our approach</b><span>We interviewed cafeteria and mess heads, as well as a manager from Nasi and Mee.</span></div><div class="detail"><b>My role</b><span>I took part in interviews, connected cultural perspectives to technology and contributed to video editing.</span></div><div class="detail"><b>What I learned</b><span>The project helped us explore how AI is used in our institutions and in food systems more broadly.</span></div></div>
+          <div class="tool-row"><span>Interviews</span><span>Culture & technology</span><span>Video editing</span></div>
+        </article>
+        <article class="project-card data glass"><div class="project-top"><span class="project-type">Excel & Power BI</span><span class="index">02</span></div><h3>Preparing data for a sales report</h3><p class="project-summary">A data preparation project supporting a sales report, using spreadsheet and business intelligence tools.</p>
+          <div class="details"><div class="detail"><b>My role</b><span>I sorted, cleaned, grouped, merged and appended data as part of the reporting workflow.</span></div><div class="detail"><b>Tools</b><span>Excel and Power BI.</span></div><div class="detail"><b>Focus</b><span>Organising source information so it could be used in a structured sales report.</span></div></div>
+          <div class="tool-row"><span>Excel</span><span>Power BI</span><span>Data preparation</span></div>
+        </article>
+      </div>
+    </section>
+    <section id="skills" aria-labelledby="skills-title">
+      <div class="section-head"><div><p class="kicker">Things I can bring to a team</p><h2 class="section-title" id="skills-title">Skills I’m developing</h2></div><p class="section-intro">I’m building these skills through projects and practical experience.</p></div>
+      <div class="skills-layout"><div class="skill-note glass"><span class="quote" aria-hidden="true">“</span><p>I’m at my best when I can get involved, work with people and learn something new along the way.</p></div><div class="skill-list">
+        <div class="skill glass"><span class="skill-num">01</span><span>Teamwork & collaboration</span></div><div class="skill glass"><span class="skill-num">02</span><span>Event coordination</span></div><div class="skill glass"><span class="skill-num">03</span><span>Budget planning</span></div><div class="skill glass"><span class="skill-num">04</span><span>Outreach & promotion</span></div><div class="skill glass"><span class="skill-num">05</span><span>Data preparation with Excel & Power BI</span></div>
+      </div></div>
+    </section>
+    <section id="contact" aria-labelledby="contact-title"><div class="contact-panel glass"><div><p class="kicker">Let’s connect</p><h2 id="contact-title">I’m open to learning what’s next.</h2><p>If you’d like to talk about my projects, experience or opportunities to learn and contribute, I’d be happy to hear from you.</p><div class="contact-links"><a href="mailto:aisiri.k2006@gmail.com">aisiri.k2006@gmail.com</a><a href="https://www.linkedin.com/in/aisiri-kiran-b81802407" target="_blank" rel="noopener noreferrer">LinkedIn profile ↗</a></div></div><div class="contact-action"><a class="button primary" href="mailto:aisiri.k2006@gmail.com">Email me ↗</a></div></div></section>
+  </main>
+  <footer class="wrap"><span>© <span id="year">2026</span> Aisiri Kiran</span><a href="#top">Back to top ↑</a></footer>
+  <script>
+    const toggle=document.querySelector('.menu'),nav=document.querySelector('#nav-links');
+    toggle.addEventListener('click',()=>{const open=nav.classList.toggle('open');toggle.setAttribute('aria-expanded',String(open));toggle.setAttribute('aria-label',open?'Close navigation':'Open navigation');toggle.textContent=open?'×':'☰';});
+    nav.querySelectorAll('a').forEach(link=>link.addEventListener('click',()=>{nav.classList.remove('open');toggle.setAttribute('aria-expanded','false');toggle.setAttribute('aria-label','Open navigation');toggle.textContent='☰';}));
+    document.querySelector('#year').textContent=new Date().getFullYear();
+  </script>
+</body>
+</html>
